@@ -1,0 +1,45 @@
+body {
+	margin: 0;
+	font-family: roboto;
+	background-color: #ffffff00;
+	color: black;
+	display: flex;
+	justify-content: center;
+}
+
+.app {
+	width: 100%;
+	max-width: 900px;
+	text-align: center;
+	padding: 20px;
+}
+
+.app-header {
+	margin: 2rem;
+	/* background-color: cornflowerblue; */
+}
+
+.content {
+	display: flex;
+	text-align: center;
+	gap: 2rem;
+	margin-bottom: 2rem;
+}
+
+.book-card {
+	width: 300px;
+	height: 400px;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 2rem;
+	background-color: #fff;
+
+	/* justify-content: space-between; */
+}
+
+.book-image {
+	width: 100px;
+	height: 140px;
+	object-fit: cover;
+	border-radius: 4px;
+}

@@ -1,0 +1,128 @@
+html,
+body,
+#root {
+	height: 100%;
+	margin: 0;
+}
+
+:root {
+	--card-width: 350px;
+	--card-height: 450px;
+	--primary-color: #4a90e2;
+	--secondary-color: #f5f7fa;
+	--accent-color: #ff6b6b;
+	--text-color: #333;
+}
+
+body {
+	margin: 0;
+	font-family: "Segoe UI", Roboto, Arial, sans-serif;
+	background-color: var(--secondary-color);
+	color: var(--text-color);
+}
+
+.app {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Header */
+.app-header {
+	padding: 2rem;
+	text-align: center;
+	background-color: var(--primary-color);
+}
+
+.app-header h1 {
+	font-weight: 700;
+	color: var(--secondary-color);
+}
+
+.content {
+	display: flex;
+	justify-content: left;
+	gap: 3rem;
+	margin: 3rem 5rem;
+}
+
+.card {
+	margin: 2rem;
+	width: var(--card-width);
+	height: var(--card-height);
+	border-radius: 12px;
+	background-color: #fff;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Book Card */
+.book-card {
+	justify-content: center;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.book-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.book-image {
+	max-width: 200px;
+	max-height: 300px;
+	object-fit: cover;
+	border-radius: 6px;
+}
+
+.book-title {
+	font-size: 1.5rem;
+	margin: 10px 0 5px;
+	padding-left: 1rem;
+	color: var(--primary-color);
+}
+
+.book-author {
+	font-size: 1.3rem;
+	color: #666;
+	padding-left: 1rem;
+}
+
+.book-link {
+	margin-top: auto;
+	color: var(--accent-color);
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.2rem;
+	padding-bottom: 1rem;
+}
+
+.book-link:hover {
+	text-decoration: underline;
+}
+
+/* Add Button */
+.add-button {
+	border: 2px dashed var(--primary-color);
+	font-size: 2rem;
+	font-weight: bold;
+	color: var(--primary-color);
+	background-color: #fff;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.add-button:hover {
+	background-color: var(--primary-color);
+	color: #fff;
+}
+
+.app-footer {
+	margin-top: auto;
+	font-size: 1rem;
+	color: #686767;
+	text-align: center;
+	padding: 10px;
+	background: white;
+}

@@ -1,0 +1,54 @@
+html,
+body,
+#root {
+	height: 100%;
+	margin: 0;
+}
+
+:root {
+	--card-width: 200px;
+	--card-height: 300px;
+	--primary-color: #4a90e2;
+	--secondary-color: #f5f7fa;
+	--accent-color: #ff6b6b;
+	--text-color: #333;
+}
+
+body {
+	margin: 0;
+	font-family: "Segoe UI", Roboto, Arial, sans-serif;
+	background-color: var(--secondary-color);
+	color: var(--text-color);
+}
+
+.app {
+	width: 100%;
+
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Header */
+.app-header {
+	padding: 2rem;
+	text-align: center;
+	background-color: cornflowerblue;
+	color: antiquewhite;
+}
+
+.content {
+	display: flex;
+	justify-content: left;
+	gap: 3rem;
+	margin: 3rem 5rem;
+}
+
+.app-footer {
+	margin-top: auto;
+	font-size: 1rem;
+	color: #888;
+	text-align: center;
+	padding: 10px;
+	background: #f5f5f5; /* optional: give footer background */
+}
