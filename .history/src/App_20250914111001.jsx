@@ -1,6 +1,6 @@
 import Book from "./Book.jsx";
-// import architectureImage from "./assets/building-evolutionary-architectures.png";
-// import uxImage from "./assets/quantative-user-research.png";
+import architectureImage from "./assets/building-evolutionary-architectures.png";
+import uxImage from "./assets/quantative-user-research.png";
 import { useEffect, useState } from "react";
 
 function App() {
